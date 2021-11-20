@@ -1,0 +1,16 @@
+@media (max-width: 767px){
+    #container{
+        position: relative;
+        height: 800px;
+        width: 100%;
+        left: 30%;
+    }
+    #map{
+        position: absolute;
+        height: 400px;
+        max-width: 1000px;
+    }
+    #footer{
+        height: 120px;
+    }
+}
