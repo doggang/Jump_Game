@@ -8,13 +8,22 @@ body{
 }
 #background{
     position: relative;
-    width: 100vw;
+    width: 80vw;
     height: 70vh;
     background-color: green;
+    padding: 0 0 0 20vw;
+}
+#jumper{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: calc(70vh - 100px);
+    background-color: black;
+    transition-duration: 2px;
 }
 #ground{
     position: relative;
-    width: 100v2;
+    width: 100vw;
     height: 30vh;
     background-color: skyblue;
 }
