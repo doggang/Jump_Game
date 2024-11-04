@@ -1,32 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    width: 1920px;
-    height: 1080px;
-}
-#background{
+#game-area { /* 게임이 진행되는 영역 */
     position: relative;
-    z-index: 1;
-    width: 1920px;
-    height: 750px;
-    background-color: green;
+    width: 100vw;
+    height: 80vh;
+    background-color: lightblue;
+    overflow: hidden;
 }
-#jumper{
+#player { /* 플레이어 */
     position: absolute;
-    z-index: 5;
     width: 100px;
     height: 100px;
-    top:650px;
-    left: 500px;
-    background-color: black;
-    transition: 0.7s;
+    background-color: red;
+    bottom: 0;
+    left: 20vw;
 }
-#ground{
-    position: relative;
-    z-index: 1;
-    width: 1920px;
-    height: 330px;
-    background-color: skyblue;
+#obstacle { /* 장애물 */
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    bottom: 0;
+    right: 0;
+    animation-name: obstacleMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+/* 장애물의 이동 애니메이션 */
+@keyframes obstacleMove {
+    from { right: 0; }
+    to { right: 100vw; }
 }
