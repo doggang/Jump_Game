@@ -40,8 +40,6 @@ const obstacle = document.getElementById("obstacle");
 function checkCollision(e) {
     const playerRect = player.getBoundingClientRect(); //player의 위치 정보
     const obstacleRect = obstacle.getBoundingClientRect(); //obstacleRect의 위치 정보
-    console.log(playerRect.left);
-    console.log(obstacleRect.right);
 
     if (
         playerRect.left < obstacleRect.right &&
